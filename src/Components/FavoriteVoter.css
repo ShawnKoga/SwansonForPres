@@ -1,0 +1,127 @@
+.ronsFavsSection {
+    background: url('http://upic.me/i/oh/q11.2.jpg') center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 65px;
+    background-attachment: fixed;
+  }
+
+  .inputArea {
+      background: rgb(68, 24, 0);
+      height: 80vh;
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 1vw;
+  }
+
+  .inputTitle {
+    padding-bottom: 4vh;
+    text-align: center;
+  }
+
+  h1 {
+    color: white;
+    font-family: 'Squada One', monospace;
+    font-size: 9vh;
+  }
+
+  .favOrHate {
+      height: 40px;
+      width: 85%;
+      overflow: scroll;
+      font-size: 20px;
+  }
+
+  .submitButton {
+    background: goldenrod;
+    height: 5vh;
+    width: 30%;
+    color: white;
+    border-color: transparent;
+    margin-top: 30px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 1vh;
+  }
+
+  .textContainer {
+    padding: 4vh;
+  }
+
+li {
+    color: white;
+    font-size: 3vh;
+    list-style-type: disc;
+    list-style-position: inside;
+    text-indent: -1em;
+    padding-left: 1em;
+  }
+
+  .thingTitle {
+    font-weight: bold;
+    font-size: 4vh;
+    font-family: sans-serif;
+  }
+
+  .thingVotes{
+    font-size: 2.5vh;
+    font-family: sans-serif;
+    margin-bottom: -20px;
+  }
+
+  .buttons {
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 30px;
+  }
+
+  .voteButton {
+    background: lightgray;
+    border-radius: 5px;
+    height: 20px;
+    width: 25%;
+    text-align: center;
+    outline: none;
+  }
+  
+  .categoryBox {
+    background: rgba(211, 211, 211, 0.75);
+    height: 80vh;
+    width: 30%;
+    overflow: scroll;
+    border-radius: 1vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3vh;
+    font-family: 'Squada One', monospace;
+    font-size: 7vh;
+  }
+
+  h2 {
+    font-size: 8vh;
+    padding-bottom: 15px;
+    text-decoration: underline;
+  }
+
+  .resetButton {
+    background: red;
+    height: 5vh;
+    width: 40%;
+    color: white;
+    border-color: transparent;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 1vh;
+  }

@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Squada+One");
+
+.landing {
+    background: url('http://www.shockinglydelicious.com/wp-content/uploads/2010/08/Is-anything-better-than-bacon...no_.jpg') no-repeat;
+    background-size: cover;
+    height:100vh;
+    width: 100%;
+    background-attachment: fixed;
+  }
+
+  .useForTransparency {
+    background-color: rgba(160, 160, 160, 0.30);
+    background-size: cover;
+    height:100vh;
+    width: 100%;
+    padding-top: 15vh;
+    padding-left: 3vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-attachment: fixed;
+  }
+
+  @keyframes App-logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+.ronSwansonHead {
+    animation: App-logo-spin infinite 20s linear;
+    height: 70vh;
+    margin-left: 5vw;
+  }
+  
+  .quoteBox {
+    background-color: rgba(211, 211, 211, 0.75);
+    height: 70vh;
+    width: 55vw;
+    margin-left: 10vw;
+    margin-right: 5vw;
+    overflow: scroll;
+    padding: 40px;
+    border-radius: 25px;
+  }
+
+  .quote {
+    font-family: 'Squada One', monospace;
+    color: black;
+    font-size: 10vh;
+  }

@@ -1,0 +1,13 @@
+.videoBox {
+    background: rgb(68, 24, 0);
+    height: 125vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .video {
+    width: 82vw;
+    height: 90vh;
+  }
