@@ -1,9 +1,13 @@
 {
   "name": "app",
-  "proxy": "http://localhost:3001/",
+  "proxy": "http://localhost:4040",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.17.0",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-scripts": "1.0.11"
@@ -13,17 +17,23 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "now-start": "node server/server.js",
-    "deploy": "now --public --dotenv=.env.prod -d"
+    "now-start": "node server/server.js"
   },
   "now": {
     "alias": "ron-swanson-for-pres"
   },
-  "proxy": "http://localhost:4040",
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
   "main": "server/server.js",
   "devDependencies": {},
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShawnKoga/SwansonForPres.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ShawnKoga/SwansonForPres/issues"
+  },
+  "homepage": "https://github.com/ShawnKoga/SwansonForPres#readme"
 }
