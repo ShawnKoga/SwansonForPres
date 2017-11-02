@@ -8,8 +8,7 @@ export default class FavoriteVoter extends Component {
 
         this.state = {
             userInput: '',
-            thingsToDisplay: [],
-            url: 'http://localhost:4040'
+            thingsToDisplay: []
         }
     }
 
@@ -18,7 +17,7 @@ export default class FavoriteVoter extends Component {
     }
 
     getThings() {
-        axios.get(this.state.url + '/api/things')
+        axios.get('/api/things')
             .then((resp) => {
                 this.setState({
                     thingsToDisplay: resp.data
@@ -36,7 +35,7 @@ export default class FavoriteVoter extends Component {
         var newThing = {
             title: e
         }
-        axios.post(this.state.url + '/api/things', newThing)
+        axios.post('/api/things', newThing)
             .then((resp) => {
                 this.setState({
                     thingsToDisplay: resp.data
@@ -45,7 +44,7 @@ export default class FavoriteVoter extends Component {
     }
 
     deleteThing(id) {
-        axios.delete(this.state.url + '/api/things/' + id)
+        axios.delete('/api/things/' + id)
             .then((resp) => {
                 this.setState({
                     thingsToDisplay: resp.data
@@ -54,7 +53,7 @@ export default class FavoriteVoter extends Component {
     }
 
     changeVote(dir, id) {
-        axios.patch(this.state.url + '/api/things/' + id + '/' + dir)
+        axios.patch('/api/things/' + id + '/' + dir)
             .then((resp) => {
                 this.setState({
                     thingsToDisplay: resp.data
@@ -63,7 +62,7 @@ export default class FavoriteVoter extends Component {
     }
 
     resetData() {
-        axios.get(this.state.url + '/api/reset')
+        axios.get('/api/reset')
             .then((resp) => {
                 this.setState({
                     thingsToDisplay: resp.data

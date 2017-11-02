@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -20,7 +22,10 @@ app.delete('/api/things/:id', thingsCtrl.deleteThing)
 app.patch('/api/things/:id/:dir', thingsCtrl.changeVote)
 app.get('/api/reset', thingsCtrl.resetData)
 
-
+const path = require('path')
+app.get('*', (req, res)=>{
+  res.sendFile(path.join(__dirname, '..','build','index.html'));
+})
 
 
 var port = 4040;

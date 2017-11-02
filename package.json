@@ -17,10 +17,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "now-start": "node server/server.js"
+    "now-start": "node server/server.js",
+    "deploy": "now --public --dotenv=.env.prod -d"
   },
   "now": {
-    "alias": "ron-swanson-for-pres"
+    "alias": "swanson-for-pres"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
   "main": "server/server.js",
@@ -34,6 +35,5 @@
   },
   "bugs": {
     "url": "https://github.com/ShawnKoga/SwansonForPres/issues"
-  },
-  "homepage": "https://github.com/ShawnKoga/SwansonForPres#readme"
+  }
 }

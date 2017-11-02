@@ -9,7 +9,7 @@ export default class QuoteFinder extends Component{
 
         this.state = {
             quote:"Click Ron's head to receive pure, unadulterated wisdom.",
-            url: 'http://ron-swanson-quotes.herokuapp.com/v2/',
+            url: 'https://ron-swanson-quotes.herokuapp.com/v2/',
         }
     }
 
